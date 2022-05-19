@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkVehicleFromController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../accets/2880529.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="343.0" layoutX="17.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="566.0" />
+      <JFXTextField fx:id="txtVehicleNo" labelFloat="true" layoutX="44.0" layoutY="69.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="242.0" promptText="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtVehicleType" labelFloat="true" layoutX="44.0" layoutY="120.0" onAction="#txtVehicleTypeOnAction" prefHeight="25.0" prefWidth="242.0" promptText="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDriverName" labelFloat="true" layoutX="44.0" layoutY="188.0" prefHeight="25.0" prefWidth="242.0" promptText="Driver Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="ParkingSlot" labelFloat="true" layoutX="44.0" layoutY="251.0" prefHeight="57.0" prefWidth="125.0" promptText="Slot Number" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTime" layoutX="414.0" layoutY="43.0" prefHeight="49.0" prefWidth="134.0" promptText="Time">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnPark" layoutX="432.0" layoutY="133.0" onAction="#btnParkOnAction" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #2980b9;" text="Park On ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelivery" layoutX="432.0" layoutY="176.0" onAction="#btnDeliveryOnAction" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #2980b9;" text="Delivery">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnManagementLogin" layoutX="432.0" layoutY="261.0" onAction="#btnMangementLoginOnAction" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #2980b9;" text="Mangement Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <Label fx:id="txtParking" layoutX="218.0" layoutY="278.0" />
+   </children>
+</AnchorPane>
